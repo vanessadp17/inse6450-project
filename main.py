@@ -8,7 +8,7 @@ import datasets
 
 parser = argparse.ArgumentParser("Milestone 1")
 # dataset
-parser.add_argument('-d', '--dataset', type=str, default='tinyimagenet', choices=['cifar10', 'cifar100', 'tinyimagenet'])
+parser.add_argument('-d', '--dataset', type=str, default='cifar100', choices=['cifar10', 'cifar100', 'tinyimagenet'])
 parser.add_argument('-j', '--workers', default=0, type=int,
                     help="number of data loading workers (default: 0)")
 parser.add_argument('--batch-size', type=int, default=128)
@@ -17,7 +17,7 @@ parser.add_argument('--gpu', type=str, default='0')
 parser.add_argument('--seed', type=int, default=1)
 parser.add_argument('--use-cpu', action='store_true')
 # openset
-parser.add_argument('--known-class', type=int, default=40)  # mismatch ratio (@20% - 2/20/40 for the CIFAR10/CIFAR100/Tiny-ImageNet datasets, respectively)
+parser.add_argument('--known-class', type=int, default=20)  # mismatch ratio (@20% - 2/20/40 for the CIFAR10/CIFAR100/Tiny-ImageNet datasets, respectively)
 
 args = parser.parse_args()
 

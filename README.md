@@ -45,3 +45,6 @@ For the TinyImageNet code, run:
 ```
 python main.py --known-class 40 --dataset tinyimagenet --gpu 0
 ```
+
+## Outputs
+Outputs for the plots are saved in a folder `~/plots`, the plots will be automatically downloaded to this folder for each datasets upon running the code.
